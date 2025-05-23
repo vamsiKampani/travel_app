@@ -25,7 +25,7 @@ class HotelsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-    // Adjust width for responsiveness, max 400
+    
     final containerWidth = screenWidth > 420 ? 400.0 : screenWidth * 0.95;
 
     return Scaffold(
@@ -57,7 +57,7 @@ class HotelsScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Image with fixed height and margin
+                  
                   Container(
                     height: 230,
                     margin: const EdgeInsets.all(5),
@@ -69,12 +69,12 @@ class HotelsScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  // Info box with name, location, and button
+                  
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                     child: Row(
                       children: [
-                        // Hotel name and location
+                        
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -97,7 +97,7 @@ class HotelsScreen extends StatelessWidget {
                             ],
                           ),
                         ),
-                        // Booked button
+                        
                         ElevatedButton(
                           onPressed: () => _bookHotel(context, hotel),
                           style: ElevatedButton.styleFrom(
