@@ -1,0 +1,77 @@
+import '../models/city.dart';
+
+final List<City> cities = [
+  City(
+    name: 'Manali',
+    imageUrl: 'https://images.unsplash.com/photo-1579689189009-874f5cac2db5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWFuYWxpfGVufDB8fDB8fHww',
+    description: "Manali is a picturesque hill station nestled in the Himalayas, perfect for adventure and nature lovers. Snow-capped peaks, serene valleys, and vibrant markets make it a year-round favorite.",
+    placesToVisit: ['Solang Valley', 'Rohtang Pass', 'Hadimba Temple', 'Old Manali'],
+    famousFoods: ['Siddu', 'Tudkiya Bhath', 'Thukpa'],
+    averageCost: 3000,
+  ),
+  City(
+    name: 'Mysore',
+    imageUrl:'https://images.unsplash.com/photo-1657856855186-7cf4909a4f78?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXlzb3JlJTIwcGFsYWNlfGVufDB8fDB8fHww',
+    description: "Mysore, the cultural capital of Karnataka, is known for its royal heritage and majestic palaces. The city blends tradition and modernity with its vibrant festivals and serene gardens.",
+    placesToVisit: ['Mysore Palace', 'Chamundi Hills', 'Brindavan Gardens'],
+    famousFoods: ['Mysore Pak', 'Mysore Masala Dosa', 'Ragi Mudde'],
+    averageCost: 2200,
+  ),
+  City(
+    name: 'Ooty',
+    imageUrl: 'https://images.unsplash.com/photo-1580979222901-12a0e56abf7d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b290eSUyQyUyMGluZGlhfGVufDB8fDB8fHww',
+    description: "Ooty, the 'Queen of Hill Stations', is famed for its rolling tea gardens, misty hills, and colonial charm. It's a serene escape nestled in the Nilgiri Hills of Tamil Nadu.",
+    placesToVisit: ['Ooty Lake', 'Botanical Gardens', 'Doddabetta Peak', 'Tea Museum'],
+    famousFoods: ['Varkey Biscuit', 'Ooty Chocolate', 'South Indian Thali'],
+    averageCost: 2800,
+  ),
+  City(
+    name: 'Maldives',
+    imageUrl: 'https://images.unsplash.com/photo-1586495985096-787fb4a54ac0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hbGRpdmVzfGVufDB8fDB8fHww',
+    description: "The Maldives is a tropical paradise famous for its crystal-clear turquoise waters and luxurious overwater bungalows. It offers world-class snorkeling, diving, and pristine white sandy beaches.",
+    placesToVisit: ['Male', 'Maafushi Island', 'Banana Reef', 'Vaadhoo Island'],
+    famousFoods: ['Mas Huni', 'Garudhiya', 'Reef Fish Curry'],
+    averageCost: 10000,
+  ),
+  City(
+    name: 'Darjeeling',
+    imageUrl: 'https://images.unsplash.com/photo-1549817997-f6958ecf47b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRhcmplZWxpbmd8ZW58MHx8MHx8fDA%3D',
+    description: "Darjeeling is renowned for its lush tea gardens and stunning views of the majestic Kanchenjunga mountain. Its charming colonial architecture and cool climate make it a popular hill station in India.",
+    placesToVisit: ['Tiger Hill', 'Batasia Loop', 'Darjeeling Himalayan Railway'],
+    famousFoods: ['Momos', 'Thukpa', 'Darjeeling Tea'],
+    averageCost: 2500,
+  ),
+  City(
+    name: 'Munnar',
+    imageUrl: 'https://images.unsplash.com/photo-1592726129893-0b0ff79c8a2b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG11bm5hcnxlbnwwfHwwfHx8MA%3D%3D',
+    description: "Munnar is a beautiful hill station in Kerala known for its vast tea plantations and mist-covered mountains. It’s a tranquil retreat with waterfalls, wildlife sanctuaries, and cool climate.",
+    placesToVisit: ['Tea Gardens', 'Eravikulam National Park', 'Mattupetty Dam'],
+    famousFoods: ['Appam with Stew', 'Kerala Sadya', 'Malabar Parotta'],
+    averageCost: 2600,
+  ),
+  City(
+    name: 'Phuket',
+    imageUrl: 'https://images.unsplash.com/photo-1587691254941-bbd1faa13154?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBodWtldHxlbnwwfHwwfHx8MA%3D%3D',
+    description: "Phuket is Thailand’s largest island, famous for its stunning beaches, vibrant nightlife, and rich cultural heritage. It offers a perfect blend of relaxation, adventure, and delicious Thai cuisine.",
+    placesToVisit: ['Patong Beach', 'Phi Phi Islands', 'Big Buddha', 'Wat Chalong'],
+    famousFoods: ['Pad Thai', 'Green Curry', 'Mango Sticky Rice'],
+    averageCost: 7500,
+  ),
+  City(
+    name: "Jaipur",
+    imageUrl: "https://static.toiimg.com/photo/msid-24476893,width-96,height-65.cms",
+    description: "Jaipur, the Pink City of India, is known for its magnificent forts, palaces, and rich Rajasthani culture. It’s a vibrant city filled with colorful bazaars, historic landmarks, and royal heritage.",
+    placesToVisit: ["Hawa Mahal", "Amber Fort", "City Palace"],
+    famousFoods: ["Dal Baati Churma", "Ghevar", "Pyaaz Kachori"],
+    averageCost: 3500,
+  ),
+  City(
+    name: 'Goa',
+    imageUrl: 'https://plus.unsplash.com/premium_photo-1671358446946-8bd43ba08a6a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29hfGVufDB8fDB8fHww',
+    description: "Goa is India's beach paradise known for its golden sands, vibrant nightlife, and Portuguese heritage. It offers a lively mix of beautiful beaches, historic churches, and delicious seafood.",
+    placesToVisit: ['Baga Beach', 'Fort Aguada', 'Basilica of Bom Jesus', 'Anjuna Market'],
+    famousFoods: ['Fish Curry', 'Prawn Balchão', 'Bebinca'],
+    averageCost: 3500,
+  ),
+  
+];
