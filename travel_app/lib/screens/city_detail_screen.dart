@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/city.dart';
 import '../models/hotel.dart';
-import 'hotels_screen.dart'; // Make sure the path is correct
+import 'hotels_screen.dart';
 
 class CityDetailScreen extends StatelessWidget {
   final City city;
@@ -10,7 +10,7 @@ class CityDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Dummy hotel data, replace with actual data logic if needed
+    
     final List<Hotel> hotels = [
       Hotel(
         name: 'The Grand Horizon',
@@ -52,7 +52,7 @@ class CityDetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Image with rounded corners and city name overlay
+            
             Stack(
               children: [
                 ClipRRect(
@@ -91,7 +91,7 @@ class CityDetailScreen extends StatelessWidget {
 
             const SizedBox(height: 16),
 
-            // Description
+            
             Text(
               city.description,
               style: const TextStyle(fontSize: 16),
@@ -99,7 +99,7 @@ class CityDetailScreen extends StatelessWidget {
 
             const SizedBox(height: 20),
 
-            // Booking Buttons
+            
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -116,14 +116,14 @@ class CityDetailScreen extends StatelessWidget {
                   },
                 ),
                 _buildShadowButton("Travel Booking", Icons.directions_car, () {
-                  // Add travel booking logic later
+                  
                 }),
               ],
             ),
 
             const SizedBox(height: 30),
 
-            // Places to Visit
+            
             const Text(
               "Places to Visit",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -133,7 +133,7 @@ class CityDetailScreen extends StatelessWidget {
 
             const SizedBox(height: 20),
 
-            // Famous Food
+            
             const Text(
               "Famous Food Items",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -143,7 +143,7 @@ class CityDetailScreen extends StatelessWidget {
 
             const SizedBox(height: 20),
 
-            // Average Cost
+            
             Text(
               "Average Cost: ₹${city.averageCost}",
               style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
@@ -154,7 +154,7 @@ class CityDetailScreen extends StatelessWidget {
     );
   }
 
-  // Updated reusable button with onPressed
+  
   Widget _buildShadowButton(String label, IconData icon, VoidCallback onPressed) {
     return Container(
       decoration: BoxDecoration(
