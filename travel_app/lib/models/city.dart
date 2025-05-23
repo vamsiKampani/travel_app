@@ -1,6 +1,6 @@
 class City {
   final String name;
-  final String imageUrl; // <-- this was imagePath earlier
+  final String imageUrl; 
   final String description;
   final List<String> placesToVisit;
   final List<String> famousFoods;
