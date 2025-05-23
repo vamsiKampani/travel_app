@@ -28,14 +28,14 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // App Logo
+              
               Image.network(
                 'https://img.freepik.com/premium-vector/logo-travel-company-with-palm-tree-plane-beach_773552-354.jpg',
                 height: 100,
               ),
               const SizedBox(height: 20),
 
-              // Name Field
+              
               TextField(
                 decoration: InputDecoration(
                   labelText: 'Name',
@@ -44,7 +44,7 @@ class LoginScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
 
-              // Password Field
+              
               TextField(
                 obscureText: true,
                 decoration: InputDecoration(
@@ -54,7 +54,7 @@ class LoginScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
 
-              // Login and Sign Up Buttons
+              
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -75,7 +75,7 @@ class LoginScreen extends StatelessWidget {
               ),
               const Spacer(),
 
-              // Google Login Button
+              
               ElevatedButton.icon(
                 onPressed: () {},
                 icon: Image.network(
