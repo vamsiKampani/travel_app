@@ -162,7 +162,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
 
-          // Chatbot icon fixed at bottom right
+          
           Positioned(
             bottom: 20,
             right: 20,
